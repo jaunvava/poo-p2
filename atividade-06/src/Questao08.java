@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Questao08 {
     public static boolean ePrimo(int n) {
         if (n <= 1) {
@@ -13,9 +15,15 @@ public class Questao08 {
     }
 
     public static void main(String[] args) {
-        System.out.println(ePrimo(2));   // true
-        System.out.println(ePrimo(7));   // true
-        System.out.println(ePrimo(9));   // false
-        System.out.println(ePrimo(15));  // false
+        Scanner input = new Scanner(System.in);
+
+        System.out.printf("Digite um número: ");
+        int num1 = input.nextInt();
+
+        System.out.printf("Digite um segundo número: ");
+        int num2 = input.nextInt();
+
+        System.out.println(ePrimo(num1));
+        System.out.println(ePrimo(num2));
     }
 }

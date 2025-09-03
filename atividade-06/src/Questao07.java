@@ -1,6 +1,8 @@
+import java.util.Scanner;
+
 public class Questao07 {
-    public static long fatorial(int n) {
-        long resultado = 1;
+    public static int fatorial(int n) {
+        int resultado = 1;
         for (int i = 1; i <= n; i++) {
             resultado *= i;
         }
@@ -8,7 +10,11 @@ public class Questao07 {
     }
 
     public static void main(String[] args) {
-        System.out.println(fatorial(5));
-        System.out.println(fatorial(0));
+        Scanner input = new Scanner(System.in);
+
+        System.out.printf("Digite um número: ");
+        int numFatorial = input.nextInt();
+
+        System.out.println(fatorial(numFatorial));
     }
 }

@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Questao06 {
     public static int somaAte(int n) {
         int soma = 0;
@@ -8,7 +10,11 @@ public class Questao06 {
     }
 
     public static void main(String[] args) {
-        System.out.println(somaAte(5));
-        System.out.println(somaAte(10));
+        Scanner input = new Scanner(System.in);
+
+        System.out.printf("Digite um número: ");
+        int num = input.nextInt();
+
+        System.out.println(somaAte(num));
     }
 }
