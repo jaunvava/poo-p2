@@ -64,4 +64,4 @@ Clone este repositório:
 
 - Navegue até a pasta exemplos ou exercicios.
 
-- Compile e execute o arquivo principal (Main).
+- Compile e execute o arquivo principal (Main.Main).
